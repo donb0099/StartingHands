@@ -7,15 +7,11 @@ action for suited and unsuited versions of the candidates.
 There are two files involved, one contains the tables and is an import to the other file which contains the logic
 to find the correct table, select the action based on table position and print out the action.  The actions are
 
-  Fold.  This hand is unplayable (typically a hand with gap greater than 2)
-  
-  Call the blind, fold if there is one or more raises.  (usually a weak hand, often playable in the blinds)
-  
-  Open with a raise or call if one raise is already in place, fold if 2 or more raises.  (potential hand, depends on flop)
-  
-  Open with a raise or call any raise and call any subsequent raise.  Careful of all in pushes.  (strong hand, would like to narrow field of competitors)
-  
-  Open with a raise and reraise any subseqent raise.  Careful of all in pushes.  (strongest hands, would like to add money to pot and narrow field of competitors)
+  - Fold.  This hand is unplayable (typically a hand with gap greater than 2)
+  - Call the blind, fold if there is one or more raises.  (usually a weak hand, often playable in the blinds)
+  - Open with a raise or call if one raise is already in place, fold if 2 or more raises.  (potential hand, depends on flop)
+  - Open with a raise or call any raise and call any subsequent raise.  Careful of all in pushes.  (strong hand, would like to narrow field of competitors)
+  - Open with a raise and reraise any subseqent raise.  Careful of all in pushes.  (strongest hands, would like to add money to pot and narrow field of competitors)
 
 The script runs in a command window on Win 10 using python 3.
 
