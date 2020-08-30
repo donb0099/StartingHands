@@ -116,3 +116,12 @@ TwoGapAction = {  # dict for 2 gap.
     '7' : ('*', 1, '0', 0),
     '8' : ('1', 1, '0', 0)}
 
+EverythingElse = {  # dict for everything else.
+            # tuple is
+            # (suited position, action code, unsuited position, action code)
+			# this is basically for anything not in any other table when 
+			# this hand is on the big blind.  Action is always check, fold 
+			# on any raise. 
+	'2' : ('b', 1, 'b', 1)}
+	
+			

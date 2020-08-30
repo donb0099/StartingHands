@@ -59,7 +59,7 @@ def findNextLowestKey(lookUpTable):
         if keyList[y] > lowCard:
             nextLowest = y - 1
             break
-    return keyList[nextLowest]
+    return keyList[y]
 
 def pairsLookup ():
     ''' pairs represent a special case and are handled slightly different
@@ -117,6 +117,14 @@ def lookupAction():
     elif (CardValues.get(highCard) == CardValues.get(lowCard)+3):
                                         # this hand is a 2 Gap
         return nonPairsLookup(TwoGapAction)
+
+    elif (position == 'b'):
+                                        # checks for special case
+                                        # of being on the button.
+                                        # any hand can call here
+                                        # because the bet has
+                                        # already been entered.
+	    return nonPairsLookup(EverythingElse)
 
     else:
         return "fold this hand, it is unplayable"
