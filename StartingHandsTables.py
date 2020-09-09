@@ -1,7 +1,7 @@
 CardValues = { # dict to convert card label to appropriate value for comparison
     '2' : 2,
     '3' : 3,
-    '4' : 4,
+    '4' : 4,
     '5' : 5,
     '6' : 6,
     '7' : 7,
