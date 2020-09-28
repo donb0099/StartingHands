@@ -1,7 +1,7 @@
 CardValues = { # dict to convert card label to appropriate value for comparison
     '2' : 2,
     '3' : 3,
-    '4' : 4,
+    '4' : 4,
     '5' : 5,
     '6' : 6,
     '7' : 7,
@@ -119,9 +119,9 @@ TwoGapAction = {  # dict for 2 gap.
 EverythingElse = {  # dict for everything else.
             # tuple is
             # (suited position, action code, unsuited position, action code)
-			# this is basically for anything not in any other table when 
-			# this hand is on the big blind.  Action is always check, fold 
-			# on any raise. 
+			# this is basically for anything not in any other table when
+			# this hand is on the big blind.  Action is always check, fold
+			# on any raise.
 	'2' : ('b', 1, 'b', 1)}
-	
-			
+
+
